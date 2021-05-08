@@ -1,0 +1,563 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #cccc;
+}
+
+.logo{
+    display: grid;
+    float: left;
+    overflow: hidden;
+    align-self: end;
+    justify-self: left;
+}
+
+
+/*---------------Barra de menu---------------*/
+
+/*nav con grid*/
+.nav{
+   
+    position: fixed;
+    background-color: #2F1893;
+    color: white;
+    width: 100%;
+    height: 39px;
+    display: grid;
+    gap: 5em;
+    grid-template-rows: auto ;
+    grid-template-columns: 2, 1fr;
+    justify-items: center;
+   
+}
+
+/* nav con flex 
+.nav{
+    border: solid 1px white;
+    position: fixed;
+    background-color: #2F1893;
+    color: white;
+    width: 100%;
+    height: 45px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}*/
+
+.MenuList{
+    display: inline-block;
+    position: absolute;
+    list-style: none;
+    font-size: 0;
+    overflow: none;
+    width: 55%;
+    height: 35px;
+    top: 10px;
+    text-align: center;
+}
+
+/*.linehome{ linea derecha del menu home
+     border-left: 1px solid white; 
+}*/
+
+.MenuList a{
+    text-decoration: none;
+    color: white;
+}
+
+.MenuList li{
+    padding-top: 5px;
+    display: inline-block;
+    position: relative;
+    font-size: 16px;
+    width: 16.5%;
+}
+
+.MenuList ul ul{
+    position: absolute;
+    display: none;
+    background-color: #2F1893;
+}
+
+.MenuList ul ul li{
+    display: block;
+    width: 125px;
+    background-color: #2F1893;
+}
+
+.MenuList ul li:hover ul{
+    display: block;
+}
+
+.MenuList ul li:hover{
+    background-color: black;
+}
+
+/*----------INDEX----------------------*/
+
+.title{ /*---TITULOS---------------------------------------*/
+    margin-top: 19px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #2F1893;
+    background-color: rgba(204, 204, 204, 0.733);
+    font-family: 'Dela Gothic One', cursive, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 1.8rem;
+    letter-spacing: 3px;
+}
+
+p{
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+/*----------------Home primera seccion del index---------------*/
+
+.home{
+    display: flex;
+    flex-flow: nowrap column;
+    width: 100%;
+    max-width: 100%;
+    height: 425px;
+    max-height: 100%;
+    padding-top: 25px;
+}
+/*------------------IMAGEN DE FONDO---------------------*/
+.home{
+    background-image: url("img/notebook-1280538_1280.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: bottom center;
+}
+
+.home p{
+    text-align: center;
+    padding-left: 20px;
+    max-width: 50%;
+    color: white;
+    font-family: 'DM Sans', sans-serif, Arial;
+    font-size: 0.8rem;
+    line-height: 28px;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 2px;
+}
+
+/*----------------Subtitulos------------------*/
+
+.subtl{
+    max-width: 50%;
+    padding-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+    color: #FFFF;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+}
+
+/*------SECCIONES CARRERA DEL INDEX-----------*/
+
+.seccion2{
+    border-top: #2F1893 5px solid;
+    width: 100%;
+    max-width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title2{
+    width: 100%;
+    margin-top: 19px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: rgba(248, 246, 246, 0.849);
+    background-color: #2e1893ce;
+    font-family: 'Dela Gothic One', cursive, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+
+.title2:hover{
+    color: rgb(255, 196, 0);
+}
+
+.seccion2 p{
+    background-color: rgba(163, 162, 162, 0.753);
+    color: #2F1893;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9rem;
+    font-style: normal;
+    line-height: 22px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 3px;    
+    margin-top: 5px;
+    max-width: 800px;
+}
+
+.seccion2{
+    background-image: url("img/work.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+   background-position-y: center;
+}
+
+.SeccionLink{
+    margin-top: 10px;
+}
+
+.SeccionLink a input:hover{
+    background-color: #2F1893;
+    color: white;
+}
+
+
+
+/*----------------------SECCION TRABAJO INDEX---------------------------------------------------------*/
+.seccionMain{
+    margin: 5px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto;
+}
+.seccionWork{
+    color: white;
+    background-color: #2F1893;
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%; 
+    justify-items: center;
+    align-items: center;
+}
+
+.seccionArt{
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-self: center;
+    margin-top: 5px;
+    width: 400px;
+    background-color: rgba(204, 204, 204, 0.219);
+    border-radius: 20px 20px 20px 20px;
+    transition: all 1s;
+   
+}
+
+.seccionDiv{
+    margin: 5px;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.seccionArt:hover {
+    margin: 15px;
+    transform: scale(1,1);
+    height: 240px;
+}
+
+.seccionDiv p{
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+    font-style: normal;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    font-weight: normal;
+}
+
+.LinkDiv{
+    text-align: center;
+    margin-top: 5px;
+    width: 100%;
+    height: 20px;
+}
+
+.LinkDiv a input:hover{
+    background-color: #2F1893;
+    color: wheat;
+}
+
+.sectlt{
+    padding-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: 'Dela Gothic One', cursive, Arial, Helvetica, sans-serif;
+    color: #FFFF;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.7rem;
+    letter-spacing: 3px;
+}
+
+
+/*-----img DE SECCION 3 TRABAJOS------*/
+
+.th1{
+    width: 220px;
+    height: 140px;
+}
+
+
+
+
+/*-----SECCION BLOG INDEX----*/
+
+.seccion4{
+    display: grid;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #2F1893;
+    text-align: center;
+}
+
+.seccion4 p{
+    font-family: 'DM Sans', sans-serif;
+    color: #FFFF;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 22px;
+    font-weight: normal;
+}
+
+.SeccionLink{
+    text-align: center;
+}
+
+.seccion4 a input:hover{
+    background-color: black;
+    color: white;
+}
+
+.img-blog{
+    width: 300px;
+    height: 100%;
+}
+
+/*-----SECCION CONTACTO INDEX (footer)----*/
+
+.SeccionContact{
+    border: 1px black solid;
+    text-align: center;
+    background-color: #cccc;
+    color:  rgb(21, 15, 97);
+}
+
+.SeccionContact a input:hover{
+    background-color: black;
+    color: white;
+}
+
+
+.SeccionContact{
+    background-image: linear-gradient(to right, #2F1893, #5092e9);
+}
+
+
+/*----2_MiCarrera---*/
+
+
+
+/*-------------------------------------3_TRABAJOS------------------------------*/
+
+.mainWork{
+    padding-top: 70px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: #5092e9;
+}
+
+.mainArt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.trabajoArt{
+    border: 1px solid rebeccapurple;
+    padding-top: 35px;
+    width: 100%;
+    
+    color: whitesmoke;
+}
+
+.trabajoDiv:hover{
+    border: yellow 1px solid
+    
+}
+
+.trabajoDiv h1{
+    color: red;
+}
+
+.trabajo1 h1{
+    
+    color: black;
+    background-color: #cccc;
+}
+
+/*Webs Apps Brandig*/
+
+.imgsmall{
+    padding-top: 5px;
+    width: 300px;
+    height: 200px;
+}
+
+/*-----------------------4_BLOG--------------------*/
+
+.homebg{
+    width: 100%;
+    height: 350px;
+    border: 3px solid green;
+    padding-top: 25px;
+    color: black;
+}
+
+.homebg p{
+    padding-left: 20px;
+    max-width: 40%;
+    background-color: #cccc;
+    color: black;
+    font-family: 'DM Sans', sans-serif, Arial;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 2px;
+}
+
+.backImg{
+    
+    background-image: url("img/marvel1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+
+.textBlog{
+    color: black;
+    font-size: 16px;
+}
+
+.introduccion{
+    background-color: #2F1893;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    color: #FFFF;
+    font-family: 'DM Sans', sans-serif, Arial;
+    font-size: 1rem;
+    line-height: 28px;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 2px;
+}
+
+.flexBlog{
+    width: 80%;
+    max-width: 100%;
+    margin: auto;
+    border: 1px solid rgb(0, 0, 0);
+    display: flex;
+    flex-flow: wrap row;
+    background-color: rgb(255, 153, 0);
+    justify-content: space-evenly;
+}
+
+.FlexColumn{
+    border: blue 1px solid;
+    display: flex;
+    flex-flow: nowrap column;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.blogIMG{
+    width: 400px;
+    height: 250px;
+}
+
+
+.carousel{
+    margin: auto;
+    border: red 1px solid;
+    overflow: hidden;
+    width: 800px;
+    height: 400px;
+}
+
+
+
+/*-----5_Contacto-----*/
+.caja2{
+    margin-bottom: 10px;
+}
+
+
+
+/*----------------MEDIA query----------*/
+
+@media only screen and (min-width: 700px){
+    .seccionArt{
+        display: grid;
+        grid-template-columns: 10fr;
+        grid-template-rows: 100% 100%;
+    }
+}
+
+
+
+@media only screen and (max-width: 800px){
+    .homebg{
+        background-image: url("img/marvel2.jpg");
+        background-size: cover;
+    }
+    .homebg p{
+        background-color: #cccc;
+        padding-left: 20px;
+        max-width: 100%;
+        color: #2F1893;
+        font-family: 'DM Sans', sans-serif, Arial;
+        font-size: normal;
+        line-height: 28px;
+        font-weight: normal;
+        font-style: normal;
+        letter-spacing: 2px;
+    }
+
+    .introduccion{
+        font-size: 18px;
+    }
+    
+    .blogIMG{
+        width: 150px;
+        height: 100px;
+    }
+
+    .carousel{
+        margin: auto;
+        overflow: hidden;
+        width: 400px;
+        height: 200px;
+    }
+}
