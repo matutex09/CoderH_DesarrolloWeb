@@ -1,0 +1,114 @@
+.header {
+  width: 100%;
+  margin: auto;
+  border: solid 1px red; }
+
+.header__titulo {
+  background-color: #2F1893;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: rgba(204, 204, 204, 0.733);
+  font-style: normal;
+  font-size: 1.8rem;
+  letter-spacing: 3px; }
+
+.header__titulo__parrafo {
+  text-align: center;
+  padding-left: 20px;
+  max-width: 50%;
+  color: white;
+  font-family: "DM Sans", sans-serif, Arial;
+  font-size: 0.8rem;
+  line-height: 28px;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 2px; }
+
+.header__titulo__parrafo__link {
+  text-align: center;
+  background-color: #2F1893;
+  color: white; }
+
+.inicio {
+  height: 425px;
+  width: 100%;
+  background-color: #2F1893; }
+
+.inicio__banner {
+  width: 100%;
+  height: auto;
+  background-color: #2F1893; }
+
+.inicio__banner__parrafo {
+  font-family: "DM Sans", sans-serif, Arial;
+  background-color: #2F1893;
+  color: white; }
+
+.inicio__banner__img .bg-tony {
+  background-image: url("media/tony.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: bottom center; }
+
+.inicio__banner__img .bg-cap {
+  background-image: url("media/cap.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: bottom center; }
+
+.inicio__banner__img .bg-hulck {
+  background-image: url("media/hulck.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: bottom center; }
+
+.seccion_parrafo {
+  font-family: "DM Sans", sans-serif, Arial;
+  text-align: center;
+  font-style: normal;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  font-weight: normal; }
+
+/* IMAGENES */
+.bg-tony {
+  background-image: url("media/tony.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: bottom center; }
+
+.bg-cap {
+  background-image: url("media/cap.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: bottom center; }
+
+.bg-hulck {
+  background-image: url("media/hulck.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: bottom center; }
+
+.box-1 {
+  width: 300px;
+  height: 100%; }
+
+.box-2 {
+  width: 600px;
+  height: 100%; }
+
+.box-3 {
+  width: 900px;
+  height: 100%; }
+
+.banner-primavera {
+  background-color: lightgreen; }
+
+.banner-verano {
+  background-color: green; }
+
+.banner-invierno {
+  background-color: blue; }
+
+.banner-otrono {
+  background-color: orange; }
