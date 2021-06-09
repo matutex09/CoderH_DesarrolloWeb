@@ -4,32 +4,21 @@
 }
 
 body{
-    background-color: #cccc;
+    background-color: #edf2f6;
 }
 
-.logo{
-    display: grid;
-    float: left;
-    overflow: hidden;
-    align-self: end;
-    justify-self: left;
-}
 
 
 /*---------------Barra de menu---------------*/
 
-/*nav con grid*/
+/*--------------NAV--------*/
 .nav{
     position: fixed;
-    background-color: #2F1893;
-    color: white;
     width: 100%;
-    height: 39px;
-    display: grid;
-    gap: 5em;
-    grid-template-rows: auto ;
-    grid-template-columns: 2, 1fr;
-    justify-items: center;
+    height: 35px;
+    background: #edf2f6;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .MenuList{
@@ -37,58 +26,49 @@ body{
     position: absolute;
     list-style: none;
     font-size: 0;
-    overflow: none;
-    width: 55%;
-    height: 35px;
-    top: 10px;
+    top: 5px;
     text-align: center;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 400;
 }
 
 .MenuList a{
+    cursor: pointer;
     text-decoration: none;
-    color: white;
+    color: rgba(0, 0, 0, 0.763);
+    
 }
 
 .MenuList li{
-    padding-top: 5px;
+    padding: 5px 10px;
     display: inline-block;
     position: relative;
-    font-size: 16px;
-    width: 16.5%;
-}
-
-.MenuList ul ul{
-    position: absolute;
-    display: none;
-    background-color: #2F1893;
-}
-
-.MenuList ul ul li{
-    display: block;
-    width: 125px;
-    background-color: #2F1893;
+    font-size: 12px;
 }
 
 .MenuList ul li:hover ul{
     display: block;
+    width: 100px;
+    background: #e3eef2;
 }
 
 .MenuList ul li:hover{
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.3);
 }
+
 
 /*----------INDEX----------------------*/
 
 .title{ /*---TITULOS---------------------------------------*/
-    margin-top: 19px;
-    margin-bottom: 15px;
-    text-align: center;
-    color: #2F1893;
-    background-color: rgba(204, 204, 204, 0.733);
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    margin: 26px 18px;
+    text-align: left;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
+    font-weight: bold;
     letter-spacing: 3px;
+    text-shadow: rgba(50, 85, 84, 0.98) 0px 2px 2px;
 }
 
 p{
@@ -101,26 +81,31 @@ p{
 .home{
     width: 100%;
     max-width: 100%;
-    height: 425px;
+    height: 350px;
     max-height: 100%;
-    padding-top: 25px;
+    padding-top: 20px;
 }
 /*------------------IMAGEN DE FONDO---------------------*/
 .home{
-    background-image: url("img/notebook-1280538_1280.jpg");
+    background-image: url("img/Image.svg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: bottom center;
+    background-position-y: -110px;
+    
+}
+
+.pick-home{
+    display: none;
 }
 
 .home p{
     text-align: center;
-    padding-left: 20px;
-    max-width: 50%;
-    color: white;
-    font-family: 'DM Sans', sans-serif, Arial;
+    padding-left: 15px;
+    width: 40%;
+    color: black;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-size: 0.8rem;
-    line-height: 28px;
+    line-height: 25px;
     font-weight: normal;
     font-style: normal;
     letter-spacing: 2px;
@@ -129,70 +114,60 @@ p{
 /*----------------Subtitulos------------------*/
 
 .subtl{
-    max-width: 50%;
-    padding-left: 20px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-family: 'DM Sans', sans-serif;
+    max-width: 39%;
+    margin: 15px 10px;
     text-align: center;
-    color: #FFFF;
+    color: black;
     font-style: normal;
-    font-weight: bold;
-    font-size: 1.4rem;
+    font-weight: 500;
+    font-size: 1.2rem;
     letter-spacing: 2px;
 }
 
 /*------SECCIONES CARRERA DEL INDEX-----------*/
 
 .seccion2{
-    border-top: #2F1893 5px solid;
     width: 100%;
     max-width: 100%;
-    height: 300px;
+    height: auto;
+    align-items: center;
+    background-color: #edf2f6;
+}
+
+.art-seccion2{
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
+/*-----------------TITULO "MI CARRERA"--------------------*/
 .title2{
-    width: 100%;
-    margin-top: 19px;
-    margin-bottom: 15px;
+    
+    margin: 20px 18px 10px;
     text-align: center;
-    color: rgba(248, 246, 246, 0.849);
-    background-color: #2e1893ce;
-    font-family: 'Dela Gothic One', cursive, Arial, Helvetica, sans-serif;
+    color: rgb(26, 24, 24);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
     font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
+    font-weight: bold;
+    
     letter-spacing: 3px;
+    text-shadow: rgba(50, 85, 84, 0.98) 0px 2px 2px;
 }
-
-.title2:hover{
-    color: rgb(255, 196, 0);
-}
-
-.seccion2 p{
-    background-color: rgba(163, 162, 162, 0.753);
-    color: #2F1893;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 0.9rem;
+/*-------------Parrafos del index o subtitl-----*/
+.seccion2 div p{
+    color: black;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
     font-style: normal;
-    line-height: 22px;
-    font-weight: 500;
+    line-height: 20px;
+    font-weight: 400;
     text-align: center;
-    letter-spacing: 3px;    
-    margin-top: 5px;
-    max-width: 800px;
+    letter-spacing: 2px;
+    margin: 10px 10px;    
+    
 }
 
-.seccion2{
-    background-image: url("img/work.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-   background-position-y: center;
-}
-
+/*------Seccion ver mas btn-------------------*/
 .SeccionLink{
     margin-top: 10px;
 }
@@ -202,9 +177,45 @@ p{
     color: white;
 }
 
+/*-------------------- IMAGEN DE SECCION 2------------------------------*/
+
+.img-seccion2{
+    margin: 15px auto;
+    width: 100%;
+    height: 250px;
+}
+
 
 
 /*----------------------SECCION TRABAJO INDEX---------------------------------------------------------*/
+
+/*------------Titulo seccion 3-----------------------*/
+.sectlt{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.4rem;
+    letter-spacing: 4px;
+    text-shadow: rgba(50, 85, 84, 0.98)0px 2px 2px;
+}
+
+
+/*--------------------SECCION 3 ARTICLE TRABAJO-----------*/
+.seccionArt{
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-self: center;
+    margin-top: 5px;
+    width: 250px;
+    background-color: #FFFF;
+    border-radius: 20px 20px 20px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
 .seccionMain{
     margin: 5px;
     text-align: center;
@@ -213,96 +224,88 @@ p{
     display: grid;
     grid-template-columns: auto;
 }
+
 .seccionWork{
-    color: white;
-    background-color: #2F1893;
+    color: black;
     margin-top: 5px;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 100%; 
     justify-items: center;
     align-items: center;
+    padding-bottom: 25px;
 }
 
-.seccionArt{
-    text-align: center;
-    display: grid;
-    justify-content: center;
-    align-self: center;
-    margin-top: 5px;
-    width: 400px;
-    background-color: rgba(204, 204, 204, 0.219);
-    border-radius: 20px 20px 20px 20px;
-    transition: all 1s;
-   
-}
 
 .seccionDiv{
     margin: 5px;
     text-align: center;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    
 }
 
-.seccionArt:hover {
-    margin: 15px;
-    transform: scale(1,1);
-    height: 240px;
+.seccionDiv p {
+    color: black;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    font-style: normal;
+    line-height: 20px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 10px 10px;
 }
 
-
+/*------------------VER MAS BTN --------------------*/
 
 .LinkDiv{
     text-align: center;
     margin-top: 5px;
+    margin-bottom: 10px;
     width: 100%;
     height: 20px;
 }
-
-.LinkDiv a input:hover{
-    background-color: #2F1893;
-    color: wheat;
-}
-
-.sectlt{
-    padding-left: 20px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-family: 'Dela Gothic One', cursive, Arial, Helvetica, sans-serif;
+.LinkDiv a input{
+    border-radius: 20px;
     color: #FFFF;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 1.7rem;
-    letter-spacing: 3px;
+    background-color: #2d7e84;
+    font-size: 12px;
+    border: none;
+    height: 25px;
+    width: 55px;
+
+}
+.LinkDiv a input:hover{
+    background-color: rgba(53, 52, 52, 0.3);
+    color: rgb(0, 0, 0);
+    border-radius: 5px 5px 5px 5px;
 }
 
 
-/*-----img DE SECCION 3 TRABAJOS------*/
+/*-----------img DE SECCION 3 TRABAJOS---------------*/
 
-.th1{
+.th2{
+    border-radius: 4px 3px 4px 3px;
+    overflow: hidden;
+    background-size: cover;
     width: 220px;
     height: 140px;
+    margin-top: 5px;
+    
 }
 
 
-
-
-/*-----SECCION BLOG INDEX----*/
+/*----------SECCION 4 INDEX----------------------*/
 
 .seccion4{
     margin-top: 5px;
     margin-bottom: 5px;
-    background-color: #2F1893;
+    border: 1px solid red;
     text-align: center;
     width: 100%;
+    height: 300px;
     
 }
 
 .seccion4 p{
-    
     text-align: center;
     font-family: 'DM Sans', sans-serif;
     color: #FFFF;
@@ -311,12 +314,16 @@ p{
     line-height: 22px;
     font-weight: normal;
 }
-.blogBox{
-    
-}
+
+/*------------------VER MAS BTN --------------------*/
 
 .SeccionLink{
     text-align: center;
+}
+
+.footer a{
+    color: white;
+    text-decoration: none;
 }
 
 .seccion4 a input:hover{
@@ -329,171 +336,360 @@ p{
     height: 100%;
 }
 
-/*-----SECCION CONTACTO INDEX (footer)----*/
-
-.SeccionContact{
-    border: 1px black solid;
-    text-align: center;
-    background-color: #cccc;
-    color:  rgb(21, 15, 97);
+/*----------Form Contac--------------------------------------------*/
+/*-----4_Contacto-----*/
+.contact-box{
+    height: 350px;
+    width: 350px;
+    background-color: #e3eef2;
+    box-shadow: 0 0 20px 0 #999;
+    right: -15%;
+    transform: translate(-10%, -10%);
+    position: relative;
+    margin-top: 20px;
 }
 
-.SeccionContact a input:hover{
-    background-color: black;
+form{
+    margin: 35px;
+}
+
+.input-text{
+    width: 265px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #777;
+    border-radius: 14px;
+    outline: none;
+}
+
+.input-textarea{
+    height: 160px;
+    padding-top: 10px;
+
+}
+
+.btn-contact{
+    border-radius: 20px;
+    color: #FFFF;
+    margin-top: 5px;
+    padding: 5px;
+    background-color: #47c35a;
+    font-size: 12px;
+    border: none;
+    height: 25px;
+    width: 55px;
+
+}
+
+/*-----------------FOOTER SECCION---------------*/
+/*-----fotter_seccion_5-----*/
+
+.Seccion-footer{
+    height: auto;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 0;
+    background-color: #0B0D17;
+    color:  rgb(255, 255, 255);
+    text-align: center;
+    flex-direction: row;
+}
+.footer-box{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 2rem 0;
+}
+
+.footer-box{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-box li{
+    margin: 0 5px;
+    padding-top: 5px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    color: #FFFF;
+}
+
+
+.footer-box a{
+    text-align: center;
+    color: #FFFF;
+    text-decoration: none;
+}
+
+.footer-box a i{
+    font-size: 0.2rem;
+}
+
+.social-link{
+    
+    list-style: none;
+    margin: 1rem 1rem 1rem 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: right;
+}
+
+.social-link a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: #FFFF;
+}
+
+.social-link a i{
+    font-size: 1.1rem;
+}
+
+.social-link{
     color: white;
 }
 
 
-.SeccionContact{
-    background-image: linear-gradient(to right, #2F1893, #5092e9);
-}
+/*--------------MEDIDAS DE IMG_ALL-------------------*/
 
-
-/*----2_MiCarrera---*/
-
-
-
-/*-------------------------------------3_TRABAJOS------------------------------*/
-
-.mainWork{
-    padding-top: 70px;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    background-color: #5092e9;
-}
-
-.mainArt{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.trabajoArt{
-    border: 1px solid rebeccapurple;
-    padding-top: 35px;
-    width: 100%;
-    
-    color: whitesmoke;
-}
-
-.trabajoDiv:hover{
-    border: yellow 1px solid
-    
-}
-
-.trabajoDiv h1{
-    color: red;
-}
-
-.trabajo1 h1{
-    
-    color: black;
-    background-color: #cccc;
-}
-
-/*Webs Apps Brandig*/
-
-.imgsmall{
-    padding-top: 5px;
-    width: 300px;
-    height: 200px;
-}
-
-/*-----------------------4_BLOG--------------------*/
-
-.homebg{
-    width: 100%;
-    height: 350px;
-    border: 3px solid green;
-    padding-top: 25px;
-    color: black;
-}
-
-.homebg p{
-    padding-left: 20px;
-    max-width: 40%;
-    background-color: #cccc;
-    color: black;
-    font-family: 'DM Sans', sans-serif, Arial;
-    font-size: 18px;
-    line-height: 28px;
-    font-weight: normal;
-    font-style: normal;
-    letter-spacing: 2px;
-}
-
-.backImg{
-    
-    background-image: url("img/marvel1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    
-}
-
-.textBlog{
-    color: black;
-    font-size: 16px;
-}
-
-.introduccion{
-    background-color: #2F1893;
-    text-align: center;
-    width: 100%;
-    max-width: 100%;
-    color: #FFFF;
-    font-family: 'DM Sans', sans-serif, Arial;
-    font-size: 1rem;
-    line-height: 28px;
-    font-weight: normal;
-    font-style: normal;
-    letter-spacing: 2px;
-}
-
-.flexBlog{
-    width: 80%;
-    max-width: 100%;
-    margin: auto;
-    border: 1px solid rgb(0, 0, 0);
-    display: flex;
-    flex-flow: wrap row;
-    background-color: rgb(255, 153, 0);
-    justify-content: space-evenly;
-}
-
-.FlexColumn{
-    border: blue 1px solid;
-    display: flex;
-    flex-flow: nowrap column;
-    align-items: center;
-    margin-bottom: 5px;
-}
-
-.blogIMG{
-    width: 400px;
+.img-bann{
+    margin: 15px auto;
+    width: 350px;
     height: 250px;
 }
 
+.img-bann-1{
+    margin: 15px auto;
+    width: 400px;
+    height: 300px;
+}
 
-.carousel{
-    margin: auto;
-    border: red 1px solid;
-    overflow: hidden;
-    width: 800px;
-    height: 400px;
+.img-bann-2{
+    margin: 15px auto;
+    width: 300px;
+    height: 250px;
+}
+
+.img-bann-3{
+    margin: 15px auto;
+    width: 300px;
+    height: 300px;
+}
+
+.img-bann-4{
+    margin: 15px auto;
+    width: 400px;
+    height: 225px;
+}
+
+/*-----------------------------CHEQUERA DIGITAL------------------------------*/
+.header-work{
+    width: 100%;
+    padding-top: 25px;
+    background-color: #e3eef2;
+    color: black; 
+    text-align: center;
+    display: grid;
+    justify-content: center;
+
+}
+
+/*----------------CHEQUERA DIGITAL-------------------------------*/
+
+.header-work h4{
+    margin: 20px 18px 10px;
+    text-align: center;
+    color: rgb(26, 24, 24);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-shadow: rgba(50, 85, 84, 0.98) 0px 2px 2px;
+}
+
+.text-check p{
+    color: black;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    font-style: normal;
+    line-height: 20px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 10px 10px;
 }
 
 
+/*----------------MEDIA query-------------------------------*/
 
-/*-----5_Contacto-----*/
-.caja2{
-    margin-bottom: 10px;
+@media only screen and (min-width: 700px){
+
+    /*-----------------SECCION HOME INDEX----------*/
+    .nav{
+        width: 95%;
+    }
+    .title{
+        width: 100%;
+        margin: 25px 10px;
+        text-align: center;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-size: 1.4rem;
+        font-weight: bold;
+        letter-spacing: 3px;
+        text-shadow: rgba(50, 85, 84, 0.98) 0px 2px 2px;
+    }
+
+    .box-title{
+        width: 400px;
+        margin-left: 20px;
+    }
+
+    .home{
+        background-image: none;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .home p{
+        width: 100%;
+        height: 50px;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .pick-home{
+        display: inline-block;
+        border-radius: 0px 60px 0px 50px;
+        box-shadow: #cccc 1px 1px 1px 1px;
+        margin-top: 20px;
+        margin-left: 20px;
+        position: absolute;
+        left: 500px;
+        top: 45px;
+        width: 60%;
+        height: 285px;
+    }
+
+    .subtl{
+        margin: 0 50px;
+        max-width: 100%;
+        margin: 15px 10px;
+        text-align: center;
+        color: black;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+    }
+
+    /*-----------SECCION CARRERA INDEX-------------*/
+
+    .art-seccion2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .art-seccion2 div p{
+        width: 760px;
+    }
+
+    .img-seccion2{
+        width: 650px;
+        height: 350px;
+    }
+
+    /*-------------SECCION TRABAJO INDEX---------------------------------*/
+
+    .seccionWork{
+        display: grid;
+        grid-template-columns: repeat(2, 0.3fr);  
+        justify-content: center;
+        grid-template-rows: 0.3fr;
+    }
+
+    .seccionArt div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .seccionMain{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    .seccionDiv{
+        margin: 10px 10px;
+        width: 750px;
+    }
+
+    /*-----------------FORM INDEX---------------------*/
+    .contact-box{
+        right: -40%;
+    }
+
+    /*----------Tamaño de los parrafos------------------*/
+
+    .text-tlt p{
+        color: black;
+        font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+        font-size: 0.8rem;
+        font-style: normal;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 2px;
+    }
+    .text-check{
+        width: 580px;
+    }
+
+
+    /*---------SIZE AND MARGIN FORM SECCION-LIST-GOPLUS*/
+
+    .text-check li{
+        margin: 5px 5px;
+        list-style: none;
+        text-align: center;
+        line-height: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+
+    .seccion-list{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
 }
 
+/*--------------CONTENEDOR DE IMG---------------*/
 
+@media only screen and (min-width: 700px){
+    .conteiner-img{
+        display: grid;
+        grid-template-columns: repeat(3, 0.3fr);
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+}
 
-/*----------------MEDIA query----------*/
-
+/*
 @media only screen and (min-width: 700px){
     .seccionArt{
         display: grid;
@@ -504,7 +700,7 @@ p{
 
 
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 700px){
     .homebg{
         background-image: url("img/marvel2.jpg");
         background-size: cover;
@@ -538,3 +734,4 @@ p{
         height: 200px;
     }
 }
+*/
